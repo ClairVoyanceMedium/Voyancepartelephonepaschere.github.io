@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/sitemap.xml
