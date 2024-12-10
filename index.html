@@ -74,13 +74,12 @@
               uiInteractions: 'modules/ui-interactions',
               formHandler: 'modules/form-handler'
           },
-          enforceDefine: true, // Renforce l'utilisation d'AMD pour éviter les conflits globaux
-          waitSeconds: 15 // Timeout pour le chargement des modules
+          enforceDefine: true,
+          waitSeconds: 15
       });
 
       // Charger et initialiser les modules nécessaires
       require(['jquery', 'analytics', 'uiInteractions', 'formHandler'], function ($, analytics, uiInteractions, formHandler) {
-          // Initialisation des modules
           console.log('Modules chargés avec succès.');
           analytics.init();
           uiInteractions.bindUI();
