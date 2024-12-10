@@ -20,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>Voyance par Téléphone - Consultation Immédiate et Fiable</title>
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZV3KNY9D8P"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -63,68 +63,30 @@
     }
     </script>
 
-    <!-- Speakable JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Voyance par Téléphone",
-        "speakable": {
-            "@type": "SpeakableSpecification",
-            "xpath": [
-                "/html/body/header/h1",
-                "/html/body/div[@class='numero-direct']/span",
-                "/html/body/div[@class='tarifs']/h2"
-            ]
-        }
-    }
-    </script>
-
-    <!-- FAQ Section for Featured Snippets -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Quels sont les avantages de la voyance par téléphone ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "La voyance par téléphone est rapide, confidentielle, et disponible 24h/7j. Frederick offre des réponses précises sur l'amour, le travail et la famille à tout moment."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Comment fonctionne une consultation de voyance par téléphone ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Vous contactez Frederick directement par téléphone. Il utilise ses capacités intuitives pour répondre clairement à vos questions sur votre avenir."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Quels sont les tarifs d'une consultation de voyance ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Les tarifs commencent à 15€ pour 10 minutes. Des forfaits de 20, 30 et 45 minutes sont également disponibles à des prix avantageux."
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- AMD Configuration -->
+    <!-- Require.js for AMD -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
     <script>
       require.config({
           baseUrl: 'https://www.clairvoyancemedium.com/js',
           paths: {
-              jquery: 'https://code.jquery.com/jquery-3.6.0.min'
-          }
+              jquery: 'https://code.jquery.com/jquery-3.6.0.min',
+              analytics: 'modules/analytics',
+              uiInteractions: 'modules/ui-interactions',
+              formHandler: 'modules/form-handler'
+          },
+          enforceDefine: true, // Renforce l'utilisation d'AMD pour éviter les conflits globaux
+          waitSeconds: 15 // Timeout pour le chargement des modules
       });
-      require(['jquery'], function ($) {
-          console.log('jQuery and AMD are properly configured.');
+
+      // Charger et initialiser les modules nécessaires
+      require(['jquery', 'analytics', 'uiInteractions', 'formHandler'], function ($, analytics, uiInteractions, formHandler) {
+          // Initialisation des modules
+          console.log('Modules chargés avec succès.');
+          analytics.init();
+          uiInteractions.bindUI();
+          formHandler.setupForms();
+      }, function (err) {
+          console.error('Erreur de chargement des modules : ', err.requireModules);
       });
     </script>
 
