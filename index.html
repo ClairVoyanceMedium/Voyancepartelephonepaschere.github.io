@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
-    <title>Voyance par Téléphone - Consultations Fiables & Immédiates - 24h/7j</title>
+    <title>Voyance par Téléphone - Consultations Fiables & Immédiates - 24h/7j </title>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZV3KNY9D8P"></script>
@@ -35,6 +35,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'AW-11082077821');
     </script>
 
@@ -71,6 +72,128 @@
       ]
     }
     </script>
+
+    <!-- Require.js for AMD -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+    <script>
+      require.config({
+          baseUrl: 'https://www.clairvoyancemedium.com/js',
+          paths: {
+              jquery: 'https://code.jquery.com/jquery-3.6.0.min',
+              analytics: 'modules/analytics',
+              uiInteractions: 'modules/ui-interactions',
+              formHandler: 'modules/form-handler'
+          },
+          enforceDefine: true,
+          waitSeconds: 15
+      });
+
+      // Charger et initialiser les modules nécessaires
+      require(['jquery', 'analytics', 'uiInteractions', 'formHandler'], function ($, analytics, uiInteractions, formHandler) {
+          console.log('Modules chargés avec succès.');
+          analytics.init();
+          uiInteractions.bindUI();
+          formHandler.setupForms();
+      }, function (err) {
+          console.error('Erreur de chargement des modules : ', err.requireModules);
+      });
+    </script>
+
+    <style>
+        body {
+            font-family: 'Roboto Serif', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            color: #fff;
+            padding: 20px 0;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+            loading: lazy;
+        }
+        .url-text {
+            font-size: 1em;
+            color: #87CEEB;
+            font-family: 'Cinzel', serif;
+            margin: 10px 0;
+        }
+        header h1 {
+            margin: 20px 0 10px;
+            font-size: 2.2em;
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Cinzel', serif;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(145deg, #FFB6C1, #FF69B4);
+            color: #fff;
+            padding: 20px 30px;
+            text-decoration: none;
+            font-size: 1.6em;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+        }
+        .cta-button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(145deg, #FF69B4, #FF1493);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+        }
+        .numero-direct {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 20px;
+            font-family: 'Cinzel', serif;
+        }
+        .highlight-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #87CEEB;
+            display: block;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .tarifs h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+        }
+        .tarifs ul {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2em;
+            color: #fff;
+            font-weight: normal;
+            list-style: none;
+            padding: 0;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+        footer a {
+            text-decoration: none;
+            color: inherit;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+    </style>
+
+    <!-- Sitemap and robots.txt references -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.clairvoyancemedium.com/sitemap.xml">
+    <meta name="robots" content="index, follow">
+
 </head>
 <body>
     <header>
@@ -98,7 +221,8 @@
 
         <section>
             <div class="numero-direct">
-                Numéro direct : <span class="highlight-number">06 95 46 89 23</span>
+                Numéro direct :
+                <span class="highlight-number">06 95 46 89 23</span>
             </div>
         </section>
 
@@ -115,7 +239,7 @@
 
     <footer>
         <p>
-            <a href="https://www.clairvoyancemedium.com/" target="_blank" rel="noopener noreferrer">© 2025 ClairVoyanceMedium.com - Tous droits réservés</a>
+            <a href="https://www.clairvoyancemedium.com/">© 2025 ClairVoyanceMedium.com - Tous droits réservés</a>
         </p>
     </footer>
 </body>
