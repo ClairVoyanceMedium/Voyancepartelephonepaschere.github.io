@@ -1,21 +1,89 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+    <!-- Page d'accueil -->
     <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/</loc>
-        <lastmod>2024-12-09</lastmod>
+        <loc>https://www.clairvoyancemedium.com/</loc>
+        <lastmod>2024-12-11</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://cdn.votresite.com/image-optimisee.webp</image:loc>
+            <image:caption>Voyance par téléphone fiable et immédiate</image:caption>
+        </image:image>
     </url>
+
+    <!-- Page "À propos" -->
     <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/tarifs</loc>
-        <lastmod>2024-12-09</lastmod>
+        <loc>https://www.clairvoyancemedium.com/a-propos</loc>
+        <lastmod>2024-12-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <!-- Page "Consultations" -->
     <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/contact</loc>
-        <lastmod>2024-12-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <loc>https://www.clairvoyancemedium.com/consultations</loc>
+        <lastmod>2024-12-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://cdn.votresite.com/images/consultation.webp</image:loc>
+            <image:caption>Consultation privée de voyance</image:caption>
+        </image:image>
     </url>
+
+    <!-- Page "Tarifs" -->
+    <url>
+        <loc>https://www.clairvoyancemedium.com/tarifs</loc>
+        <lastmod>2024-12-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Page FAQ -->
+    <url>
+        <loc>https://www.clairvoyancemedium.com/faq</loc>
+        <lastmod>2024-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Page blog (exemple si applicable) -->
+    <url>
+        <loc>https://www.clairvoyancemedium.com/blog</loc>
+        <lastmod>2024-12-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Vidéo de présentation -->
+    <url>
+        <loc>https://www.clairvoyancemedium.com/</loc>
+        <video:video>
+            <video:thumbnail_loc>https://cdn.votresite.com/videos/thumbnail.webp</video:thumbnail_loc>
+            <video:title>Présentation de Frederick - Voyance par téléphone</video:title>
+            <video:description>Découvrez les services de voyance par téléphone avec Frederick, expert en consultations fiables et immédiates.</video:description>
+            <video:content_loc>https://cdn.votresite.com/videos/presentation.mp4</video:content_loc>
+            <video:player_loc>https://www.clairvoyancemedium.com/player</video:player_loc>
+            <video:duration>120</video:duration>
+            <video:publication_date>2024-12-10</video:publication_date>
+        </video:video>
+    </url>
+
+    <!-- Section pour images supplémentaires -->
+    <url>
+        <loc>https://www.clairvoyancemedium.com/images</loc>
+        <lastmod>2024-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://cdn.votresite.com/images/guide-spirituel.webp</image:loc>
+            <image:caption>Frederick, votre guide spirituel</image:caption>
+        </image:image>
+    </url>
+
 </urlset>
