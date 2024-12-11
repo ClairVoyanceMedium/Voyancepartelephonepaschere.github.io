@@ -1,42 +1,43 @@
-# Indique aux robots que toutes les pages peuvent être explorées, sauf restrictions spécifiées
+# Optimized Robots.txt for clairvoyancemedium.com
+
+# General directives for all user agents
 User-agent: *
-Disallow: /admin/
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# Prevent crawling of unnecessary directories
+Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /private/
+Disallow: /old/
+Disallow: /test/
 
-# Bloquer des URL avec paramètres inutiles pour l'indexation
-Disallow: /*?debug=true
-Disallow: /*?preview=true
+# Block specific file types from being indexed
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /*.bak$
+Disallow: /*.log$
+Disallow: /*.sh$
 
-# Permettre les fichiers nécessaires au bon affichage et fonctionnement
-Allow: /css/
-Allow: /js/
-Allow: /images/
-
-# Référencement des ressources multimédias
-Allow: *.png
-Allow: *.jpg
-Allow: *.webp
-Allow: *.css
-Allow: *.js
-
-# Fournir le chemin du fichier sitemap pour une meilleure indexation
+# Sitemap locations
 Sitemap: https://www.clairvoyancemedium.com/sitemap.xml
+Sitemap: https://www.clairvoyancemedium.com/sitemap-images.xml
 
-# Autorisation pour les robots Google et Bing pour maximiser les campagnes publicitaires
+# Additional optimizations for key search engines
 User-agent: Googlebot
-Allow: /
-User-agent: AdsBot-Google
-Allow: /
+Allow: /search/
+Allow: /images/
+Disallow: /private/
+
 User-agent: Bingbot
 Allow: /
+Disallow: /private/
 
-# Bloquer les robots nuisibles ou non désirés
-User-agent: BadBot
-Disallow: /
-User-agent: EvilScraper
+User-agent: Yandex
 Disallow: /
 
-# Empêcher l'exploration des fichiers sensibles
-Disallow: /config/
-Disallow: /backup/
+# Custom crawling rate for high traffic
+Crawl-delay: 10
+
+# Prevent indexing of dynamic URLs
+Disallow: /*?*
