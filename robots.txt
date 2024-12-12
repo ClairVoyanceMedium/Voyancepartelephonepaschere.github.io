@@ -1,39 +1,49 @@
-# Optimized Robots.txt for clairvoyancemedium.com
+# Robots.txt pour https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/
 
-# General rules for all bots
+# Indique que toutes les pages importantes doivent être explorées
 User-agent: *
-Disallow: /wp-admin/
-Allow: /wp-admin/admin-ajax.php
+Allow: /
 
-# Block common sensitive or unnecessary files
-Disallow: /cgi-bin/
+# Bloque les répertoires inutiles (à personnaliser selon votre site)
 Disallow: /tmp/
-Disallow: /old/
 Disallow: /private/
-Disallow: /*.php$
-Disallow: /*.log$
-Disallow: /*.bak$
-Disallow: /*.sh$
+Disallow: /test/
+Disallow: /drafts/
 
-# Prevent indexing of dynamic URLs
+# Empêche l'indexation des paramètres d'URL pour éviter le contenu dupliqué
 Disallow: /*?*
 
-# Specific rules for search engines
+# Empêche l'indexation des fichiers non pertinents pour le SEO
+Disallow: /404.html
+Disallow: /sitemap.xml
+Disallow: /scripts/
+Disallow: /assets/
+
+# Précise l'emplacement du sitemap XML pour Google
+Sitemap: https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/sitemap.xml
+
+# Données spécifiques pour Google
 User-agent: Googlebot
-Allow: /search/
-Allow: /images/
-Disallow: /private/
+Allow: /sitemap.xml
+Allow: /assets/
+Crawl-delay: 2  # Facultatif, ralentit les crawlers si le site est lent
 
-User-agent: Bingbot
-Allow: /
-Disallow: /private/
-
-User-agent: Yandex
+# Blocage des crawlers indésirables
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SEMrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: DotBot
 Disallow: /
 
-# Crawl-delay for reducing server load
-Crawl-delay: 10
+# Autorisation pour les bots d'images Google
+User-agent: Googlebot-Image
+Allow: /images/
 
-# Sitemaps
-Sitemap: https://www.clairvoyancemedium.com/sitemap.xml
-Sitemap: https://www.clairvoyancemedium.com/sitemap-images.xml
+# Optimisation pour les bots des réseaux sociaux
+User-agent: Twitterbot
+Allow: /
+User-agent: FacebookExternalHit
+Allow: /
