@@ -15,11 +15,10 @@ Disallow: /*?*
 
 # Empêche l'indexation des fichiers non pertinents pour le SEO
 Disallow: /404.html
-Disallow: /sitemap.xml
 Disallow: /scripts/
 Disallow: /assets/
 
-# Précise l'emplacement du sitemap XML pour Google
+# Précise l'emplacement du sitemap XML pour Google et les IA
 Sitemap: https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/sitemap.xml
 
 # Données spécifiques pour Google
@@ -46,4 +45,10 @@ Allow: /images/
 User-agent: Twitterbot
 Allow: /
 User-agent: FacebookExternalHit
+Allow: /
+
+# Indication supplémentaire pour IA
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
 Allow: /
