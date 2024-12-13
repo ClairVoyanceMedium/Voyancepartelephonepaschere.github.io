@@ -1,77 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-
-    <!-- Page principale -->
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:data="http://www.google.com/schemas/sitemap-data/1.0">
+    
+    <!-- Homepage -->
     <url>
         <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/</loc>
-        <lastmod>2024-12-12</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2024-12-13</lastmod>
         <priority>1.0</priority>
-    </url>
-
-    <!-- À propos -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/a-propos</loc>
-        <lastmod>2024-12-12</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Consultations -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/consultations</loc>
-        <lastmod>2024-12-12</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Tarifs -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/tarifs</loc>
-        <lastmod>2024-12-12</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Images -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/</loc>
         <image:image>
             <image:loc>https://cdn.votresite.com/image-optimisee.webp</image:loc>
-            <image:caption>Voyance par téléphone fiable et immédiate</image:caption>
+            <image:caption>Voyance par téléphone avec Frederick</image:caption>
+            <image:title>Consultation de voyance fiable par téléphone</image:title>
         </image:image>
     </url>
 
-    <!-- FAQ Questions -->
+    <!-- Consultations Page -->
     <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/faq</loc>
-        <lastmod>2024-12-12</lastmod>
-        <changefreq>weekly</changefreq>
+        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/consultations</loc>
+        <lastmod>2024-12-13</lastmod>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/consultations" />
     </url>
 
-    <!-- Foire aux Questions spécifiques -->
+    <!-- Tarifs Page -->
     <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/faq#types-de-questions</loc>
-        <lastmod>2024-12-12</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/tarifs</loc>
+        <lastmod>2024-12-13</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/tarifs" />
+    </url>
+
+    <!-- FAQ Section -->
+    <url>
+        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/#faq</loc>
+        <lastmod>2024-12-13</lastmod>
         <priority>0.7</priority>
     </url>
 
+    <!-- Speakable Content -->
     <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/faq#choisir-un-voyant</loc>
-        <lastmod>2024-12-12</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/</loc>
+        <lastmod>2024-12-13</lastmod>
+        <priority>1.0</priority>
+        <speakable>
+            <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/</loc>
+            <speakableSelector>
+                <cssSelector>
+                    h1, .cta-button, .highlight-number, .tarifs ul
+                </cssSelector>
+            </speakableSelector>
+        </speakable>
     </url>
-
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/faq#voyance-confidentielle</loc>
-        <lastmod>2024-12-12</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
 </urlset>
