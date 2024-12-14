@@ -45,13 +45,30 @@
     </script>
 
     <!-- Google Ads Remarketing Tag -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11082077821"></script>
-    <script defer>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'AW-11082077821');
-    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11082077821"></script>
+<script defer>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  // Configuration de base pour Google Ads
+  gtag('config', 'AW-11082077821');
+
+  // Exemple de suivi d'une conversion spécifique
+  gtag('event', 'conversion', {
+    'send_to': 'AW-11082077821/XxXxXxXxXx',
+    'value': 15.0,
+    'currency': 'EUR'
+  });
+
+  // Suivi d’un clic sur le bouton "Appel Immédiat"
+  document.querySelector('.cta-button').addEventListener('click', function() {
+    gtag('event', 'cta_click', {
+      'event_category': 'Engagement',
+      'event_label': 'Appel Immédiat'
+    });
+  });
+</script>
 
     <!-- BreadcrumbList JSON-LD -->
     <script type="application/ld+json">
