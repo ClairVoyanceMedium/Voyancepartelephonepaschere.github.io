@@ -185,23 +185,20 @@
 
     <!-- Minified CSS -->
     <style>
-    body { font-family: 'Roboto Serif', serif; margin: 0; padding: 0; background-color: #000; color: #fff; text-align: center; }
-    header { color: #fff; padding: 20px 0; }
-    header img { max-width: 100%; height: auto; object-fit: cover; border-radius: 10px; display: block; margin: 0 auto; }
-    .url-text { font-size: 1em; color: #87CEEB; font-family: 'Cinzel', serif; margin: 10px 0; }
-    header h1 { margin: 20px 0 10px; font-size: 2.2em; color: #fff; font-weight: bold; font-family: 'Cinzel', serif; }
-    .cta-button { display: inline-block; background: linear-gradient(145deg, #FFB6C1, #FF69B4); color: #fff; padding: 20px 30px; text-decoration: none; font-size: 1.6em; border-radius: 10px; margin-top: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease, opacity 0.3s ease; }
-    .cta-button:hover { transform: scale(1.02); opacity: 0.98; }
-    .cta-button:focus { outline: none; box-shadow: 0 0 0 3px rgba(255,255,255,0.5); }
-    .numero-direct { font-size: 1.5em; font-weight: bold; margin-top: 20px; font-family: 'Cinzel', serif; }
-    .highlight-number { font-size: 1.8em; font-weight: bold; color: #87CEEB; display: block; font-family: Helvetica, Arial, sans-serif; }
-    .tarifs h2 { font-family: 'Cinzel', serif; font-size: 1.8em; font-weight: bold; color: #fff; }
-    .tarifs ul { font-family: 'Cinzel', serif; font-size: 1.2em; color: #fff; font-weight: normal; list-style: none; padding: 0; }
-    footer { margin-top: 30px; font-size: 0.9em; color: #aaa; }
-    footer a { text-decoration: none; color: inherit; font-family: Helvetica, Arial, sans-serif; }
-    /* Lazy loading for images */
-    .lazy-load { opacity: 0; transition: opacity 0.5s; }
-    .lazy-load.loaded { opacity: 1; }
+        body { font-family: 'Roboto Serif', serif; margin: 0; padding: 0; background-color: #000; color: #fff; text-align: center; }
+        header { color: #fff; padding: 20px 0; }
+        header img { max-width: 100%; height: auto; object-fit: cover; border-radius: 10px; display: block; margin: 0 auto; }
+        .url-text { font-size: 1em; color: #87CEEB; font-family: 'Cinzel', serif; margin: 10px 0; }
+        header h1 { margin: 20px 0 10px; font-size: 2.2em; color: #fff; font-weight: bold; font-family: 'Cinzel', serif; }
+        .cta-button { display: inline-block; background: linear-gradient(145deg, #FFB6C1, #FF69B4); color: #fff; padding: 20px 30px; text-decoration: none; font-size: 1.6em; border-radius: 10px; margin-top: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease, opacity 0.3s ease; }
+        .cta-button:hover { transform: scale(1.02); opacity: 0.98; }
+        .cta-button:focus { outline: none; box-shadow: 0 0 0 3px rgba(255,255,255,0.5); }
+        .numero-direct { font-size: 1.5em; font-weight: bold; margin-top: 20px; font-family: 'Cinzel', serif; }
+        .highlight-number { font-size: 1.8em; font-weight: bold; color: #87CEEB; display: block; font-family: Helvetica, Arial, sans-serif; }
+        .tarifs h2 { font-family: 'Cinzel', serif; font-size: 1.8em; font-weight: bold; color: #fff; }
+        .tarifs ul { font-family: 'Cinzel', serif; font-size: 1.2em; color: #fff; font-weight: normal; list-style: none; padding: 0; }
+        footer { margin-top: 30px; font-size: 0.9em; color: #aaa; }
+        footer a { text-decoration: none; color: inherit; font-family: Helvetica, Arial, sans-serif; }
     </style>
 
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/sitemap.xml">
@@ -213,11 +210,9 @@
 <body>
     <header>
         <div style="text-align: center; margin-top: 20px;">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://github.com/ClairVoyanceMedium/Voyancepartelephonepaschere.github.io/raw/main/Images/1%20-%20logo%20officiel(grande%20taille)%20(1).jpg" 
+            <img src="https://github.com/ClairVoyanceMedium/Voyancepartelephonepaschere.github.io/raw/main/Images/1%20-%20logo%20officiel(grande%20taille)%20(1).jpg" 
                  alt="Logo officiel Clairvoyance Medium" 
-                 class="lazy-load" 
-                 style="max-width: 100%; height: auto; max-height: 300px; display: inline-block; border-radius: 10px;"
-                 onerror="this.onerror=null; this.src='https://placehold.co/400x300?text=Logo+ClairvoyanceMedium';">
+                 style="max-width: 100%; height: auto; max-height: 300px; display: inline-block; border-radius: 10px;">
         </div>
         <p>VOYANCE PAR TÉLÉPHONE FIABLE, DÉTAILLÉE ET IMMÉDIATE</p>
         <p class="url-text">www.clairvoyancemedium.com</p>
@@ -273,35 +268,5 @@
             </a>
         </p>
     </footer>
-
-    <script>
-        // Lazy loading for images
-        document.addEventListener("DOMContentLoaded", function() {
-            var lazyImages = [].slice.call(document.querySelectorAll("img.lazy-load"));
-
-            if ("IntersectionObserver" in window) {
-                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-                    entries.forEach(function(entry) {
-                        if (entry.isIntersecting) {
-                            let lazyImage = entry.target;
-                            lazyImage.src = lazyImage.dataset.src;
-                            lazyImage.classList.add("loaded");
-                            lazyImageObserver.unobserve(lazyImage);
-                        }
-                    });
-                });
-                
-                lazyImages.forEach(function(lazyImage) {
-                    lazyImageObserver.observe(lazyImage);
-                });
-            } else {
-                // Fallback pour les navigateurs qui ne supportent pas l'IntersectionObserver
-                lazyImages.forEach(function(lazyImage) {
-                    lazyImage.src = lazyImage.dataset.src;
-                    lazyImage.classList.add("loaded");
-                });
-            }
-        });
-    </script>
 </body>
 </html>
