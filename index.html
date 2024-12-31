@@ -210,11 +210,27 @@
 <body>
     <header>
         <!-- Ajout du logo -->
-    <div style="text-align: center; margin-top: 20px;">
-    <img src="https://github.com/ClairVoyanceMedium/Voyancepartelephonepaschere.github.io/raw/main/Images/1%20-%20logo%20officiel(grande%20taille)%20(1).jpg" 
-         alt="Logo officiel Clairvoyance Medium" 
-         style="max-width: 100%; height: auto; max-height: 300px; display: inline-block; border-radius: 10px;">
-</div>
+    <picture>
+    <!-- Format WebP pour les navigateurs modernes -->
+    <source srcset="https://i.imgur.com/GmyGlKk.webp" type="image/webp" sizes="(max-width: 768px) 100vw, 450px">
+    <!-- Format JPEG comme fallback -->
+    <img 
+        src="https://i.imgur.com/GmyGlKk.jpg" 
+        alt="Logo Clairvoyance Medium - Voyance sérieuse et fiable depuis 1998" 
+        title="ClairvoyanceMedium.com - Expert en voyance depuis 1998" 
+        width="450" 
+        height="450" 
+        loading="lazy" 
+        decoding="async" 
+        fetchpriority="high" 
+        style="max-width: 100%; height: auto; display: block; margin: 0 auto;"
+        srcset="
+            https://i.imgur.com/GmyGlKk.jpg 450w,
+            https://i.imgur.com/GmyGlKk.webp 450w
+        "
+        sizes="(max-width: 768px) 100vw, 450px">
+</picture>
+        
         <p>VOYANCE PAR TÉLÉPHONE FIABLE, DÉTAILLÉE ET IMMÉDIATE</p>
         <p class="url-text">www.clairvoyancemedium.com</p>
         <br>
