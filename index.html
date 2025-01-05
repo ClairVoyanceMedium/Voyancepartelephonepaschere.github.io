@@ -472,6 +472,49 @@
         <br>
         <br>
         <h1>Consultation de Voyance Privée par Téléphone</h1>
+
+ <!-- Bouton Étoile pour Ajouter aux Favoris -->
+<div style="text-align: center; margin-top: 20px;">
+    <button id="favorite-button" onclick="addToFavorites()" style="background: none; border: none; cursor: pointer;" aria-label="Ajouter ce site à vos favoris" aria-pressed="false">
+        <span id="favorite-text" style="font-family: Arial, sans-serif; font-size: 1em; color: #FFD700;">
+            Ajouter à vos favoris ⭐
+        </span>
+    </button>
+</div>
+
+<style>
+/* Ajout d'une animation pour rendre l'interaction plus agréable */
+#favorite-star {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+#favorite-star.active {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+</style>
+
+<script>
+    function addToFavorites() {
+    const text = document.getElementById("favorite-text");
+    const button = document.getElementById("favorite-button");
+
+    // Mise à jour du texte et de la couleur
+    text.innerHTML = "⭐ Ajouter à vos favoris !";
+    text.style.color = "#FFD700"; // Couleur jaune doré
+
+    // Mettre à jour l'état ARIA
+    button.setAttribute("aria-pressed", "true");
+
+    // Afficher un message pour guider l'utilisateur
+    if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+        alert("Appuyez sur le bouton de partage en bas, puis sur 'Ajouter à l'écran d'accueil'.");
+    } else if (navigator.userAgent.match(/Android/i)) {
+        alert("Appuyez sur le menu (⋮) en haut à droite, puis sur 'Ajouter à l'écran d'accueil'.");
+    } else {
+        alert("Appuyez sur Ctrl + D (ou Command + D sur Mac) pour ajouter ce site à vos favoris.");
+    }
+}
+    </script>
     </header>
 
     <main>
