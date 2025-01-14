@@ -1,0 +1,22 @@
+# Authorized Digital Sellers (ads.txt)
+# Date : 2025-01-08
+# Applicable for multiple sites including:
+# - clairvoyancemedium.github.io
+# - Any other domains managed by you
+
+# Google AdSense configuration
+google.com, pub-1318316674011684, DIRECT, f08c47fec0942fa0
+
+# Example for additional ad networks (replace placeholders as needed)
+# anothernetwork.com, pub-xxxxxxxxxxxxx, DIRECT, 123456789abcdef
+# Example for resellers (optional)
+# resellerplatform.com, pub-xxxxxxxxxxxxx, RESELLER, 987654321abcdef
+
+# Instructions:
+# - Ensure this file is hosted at the root of your domain
+# - URL example: https://clairvoyancemedium.github.io/ads.txt
+# - Validate using Google AdSense dashboard or tools like https://www.ads.txt-validator.com/
+
+# Notes:
+# - For Google AdSense, `DIRECT` is recommended unless you work with a reseller.
+# - The "f08c47fec0942fa0" identifier is required for Google AdSense and should not be changed.
