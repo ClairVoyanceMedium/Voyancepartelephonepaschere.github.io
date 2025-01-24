@@ -567,11 +567,16 @@
 
     <footer>
     <p style="text-align: center; margin-top: 20px; font-size: 0.9em; color: #aaa;">
-        <a href="https://www.clairvoyancemedium.com/Conditions-Generales-des-Ventes-et-d-Utilisation-ccsaaaaaa.asp" 
-           target="_blank" 
-           style="color: #aaa; text-decoration: none;">
-            © 2025 ClairvoyanceMedium - Tous droits réservés
-        </a>
+    <a href="https://www.clairvoyancemedium.com/Conditions-Generales-des-Ventes-et-d-Utilisation-ccsaaaaaa.asp" target="_blank" rel="noopener noreferrer">
+  © <span id="current-year"></span> ClairVoyanceMedium.com - Todos los derechos reservados
+</a>
+
+<script>
+  // Obtener el año actual
+  const currentYear = new Date().getFullYear();
+  // Insertar el año en el elemento con el ID "current-year"
+  document.getElementById("current-year").textContent = currentYear;
+</script>
     </p>
 </footer>
 </body>
