@@ -580,10 +580,11 @@
 </a>
 
 <script>
-  // Récupérer l'année en cours
-  const currentYear = new Date().getFullYear();
-  // Insérer l'année dans l'élément avec l'ID "current-year"
-  document.getElementById("current-year").textContent = currentYear;
+  document.addEventListener("DOMContentLoaded", function() {
+  // Mise à jour de l'année courante
+  document.querySelectorAll("#current-year").forEach(function(el) {
+    el.textContent = new Date().getFullYear();
+  });
 </script>
     </p>
 </footer>
