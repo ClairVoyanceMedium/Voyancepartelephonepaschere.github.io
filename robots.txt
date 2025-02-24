@@ -5,18 +5,19 @@
 #   • Optimiser l'indexation sur dispositifs mobiles,
 #   • Faciliter l'indexation des ressources multimédias (images, vidéos, assets),
 #   • Gérer efficacement les pages dynamiques en évitant l'indexation des URLs avec paramètres de tracking,
-#   • Offrir une performance SEO supérieure pour surpasser la concurrence.
+#   • Offrir une performance SEO supérieure pour surpasser la concurrence,
+#   • Préparer le site pour les évolutions futures (IA, assistants vocaux, etc.).
 #
 # Adresse du site :
-# https://clairvoyancemedium.github.io/Recuperar-seu-amor-perdido-rapidamente-e-mante-lo.github.io/
+# https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/
 #
 # Sitemap – indispensable pour guider les crawlers :
-Sitemap: https://clairvoyancemedium.github.io/Recuperar-seu-amor-perdido-rapidamente-e-mante-lo.github.io/sitemap.xml
+Sitemap: https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/sitemap.xml
 
 # DIRECTIVES GÉNÉRALES pour TOUS les bots :
 User-agent: *
 Allow: /
-# Bloquer tous les paramètres de tracking pour éviter le contenu dupliqué
+# Bloquer uniquement les paramètres de tracking pour éviter le contenu dupliqué
 Disallow: /*?utm_*
 # Autoriser l'accès aux ressources multimédias et aux assets pour une indexation optimale
 Allow: /images/
