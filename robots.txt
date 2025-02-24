@@ -15,8 +15,9 @@
 # Sitemap – indispensable pour guider les crawlers :
 Sitemap: https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/sitemap.xml
 
-# DIRECTIVES GÉNÉRALES pour TOUS les bots :
+# DIRECTIVES GÉNÉRALES pour TOUS les bots (crawl-delay par défaut pour limiter la charge) :
 User-agent: *
+Crawl-delay: 10
 Allow: /
 # Bloquer uniquement les paramètres de tracking pour éviter le contenu dupliqué
 Disallow: /*?utm_*
@@ -27,6 +28,7 @@ Allow: /media/
 Allow: /assets/
 # Directive Clean-param pour supprimer les paramètres de suivi (prise en charge par certains crawlers comme Yandex)
 Clean-param: utm_source&utm_medium&utm_campaign
+# Note : Aucun répertoire sensible (/cgi-bin/, /tmp/, etc.) n’existe sur ce site hébergé sur GitHub Pages
 
 # DIRECTIVES SPÉCIFIQUES pour les moteurs de recherche prioritaires (aucun crawl-delay pour une indexation ultra-rapide) :
 User-agent: Googlebot
@@ -44,7 +46,11 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-# DIRECTIVES pour les bots régionaux et spécialisés (IA, voix, etc.) – crawl-delay de 10s pour limiter la charge serveur
+# DIRECTIVES pour les moteurs francophones actifs (sans delay pour maximiser la visibilité) :
+User-agent: QwantBot
+Allow: /
+
+# DIRECTIVES pour les bots régionaux et spécialisés (IA, voix, etc.) – crawl-delay de 10s pour limiter la charge serveur :
 User-agent: Yandex
 Crawl-delay: 10
 Allow: /
@@ -61,23 +67,20 @@ User-agent: VoiceBot
 Crawl-delay: 10
 Allow: /
 
-# DIRECTIVES pour les assistants vocaux (Google Assistant, Alexa, Siri, etc.) :
+# DIRECTIVES pour les assistants vocaux (Google Assistant, Alexa, Siri, etc.) – crawl-delay réduit pour une accessibilité optimale :
 User-agent: Google-Assistant
-Allow: /
 Crawl-delay: 5
+Allow: /
 
 User-agent: Alexa
-Allow: /
 Crawl-delay: 5
+Allow: /
 
 User-agent: Siri
-Allow: /
 Crawl-delay: 5
+Allow: /
 
 # DIRECTIVES pour futurs moteurs de recherche francophones (à activer en cas d'émergence) :
-# User-agent: QwantBot
-# Allow: /
-#
 # User-agent: SeznamBot
 # Allow: /
 #
