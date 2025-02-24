@@ -50,7 +50,7 @@ Allow: /
 User-agent: QwantBot
 Allow: /
 
-# DIRECTIVES pour les bots régionaux et spécialisés (IA, voix, etc.) – crawl-delay de 10s pour limiter la charge serveur :
+# DIRECTIVES pour les bots régionaux et spécialisés (crawl-delay de 10s pour limiter la charge serveur) :
 User-agent: Yandex
 Crawl-delay: 10
 Allow: /
@@ -67,7 +67,7 @@ User-agent: VoiceBot
 Crawl-delay: 10
 Allow: /
 
-# DIRECTIVES pour les assistants vocaux (Google Assistant, Alexa, Siri, etc.) – crawl-delay réduit pour une accessibilité optimale :
+# DIRECTIVES pour les assistants vocaux et bots d’IA spécifiques (crawl-delay réduit pour une accessibilité optimale) :
 User-agent: Google-Assistant
 Crawl-delay: 5
 Allow: /
@@ -80,10 +80,15 @@ User-agent: Siri
 Crawl-delay: 5
 Allow: /
 
-# DIRECTIVES pour futurs moteurs de recherche francophones (à activer en cas d'émergence) :
-# User-agent: SeznamBot
+# DIRECTIVES pour d’éventuels bots d’IA futurs (exemples à activer si nécessaire) :
+# User-agent: xAI-Bot
+# Crawl-delay: 5
 # Allow: /
 #
-# Note : Ces directives seront activées si des bots spécifiques au marché francophone émergent.
+# User-agent: ChatGPT-Crawler
+# Crawl-delay: 5
+# Allow: /
+#
+# Note : Ces bots d’IA seront activés si des crawlers spécifiques émergent.
 
 # FIN DU FICHIER
