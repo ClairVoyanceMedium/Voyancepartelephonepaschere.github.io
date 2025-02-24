@@ -1,4 +1,4 @@
-# robots.txt – Optimisé pour le marché francophone (2025-02-24)
+# robots.txt – Optimisé pour le marché francophone et les assistants vocaux (2025-02-24)
 #
 # Ce fichier a été conçu pour :
 #   • Maximiser l'indexation par les moteurs de recherche globaux et francophones,
@@ -6,7 +6,8 @@
 #   • Faciliter l'indexation des ressources multimédias (images, vidéos, assets),
 #   • Gérer efficacement les pages dynamiques en évitant l'indexation des URLs avec paramètres de tracking,
 #   • Offrir une performance SEO supérieure pour surpasser la concurrence,
-#   • Préparer le site pour les évolutions futures (IA, assistants vocaux, etc.).
+#   • Préparer le site pour les évolutions futures (IA, assistants vocaux, etc.),
+#   • Optimiser l'accessibilité pour les assistants vocaux (Google Assistant, Alexa, Siri, etc.).
 #
 # Adresse du site :
 # https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/
@@ -59,6 +60,19 @@ Allow: /
 User-agent: VoiceBot
 Crawl-delay: 10
 Allow: /
+
+# DIRECTIVES pour les assistants vocaux (Google Assistant, Alexa, Siri, etc.) :
+User-agent: Google-Assistant
+Allow: /
+Crawl-delay: 5
+
+User-agent: Alexa
+Allow: /
+Crawl-delay: 5
+
+User-agent: Siri
+Allow: /
+Crawl-delay: 5
 
 # DIRECTIVES pour futurs moteurs de recherche francophones (à activer en cas d'émergence) :
 # User-agent: QwantBot
