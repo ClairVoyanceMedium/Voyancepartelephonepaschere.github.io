@@ -7,7 +7,7 @@
         xmlns:ai="http://ai.seo.schema.org/"
         xmlns:voice="http://voice-search.schema.org/">
 
-    <!-- 🏠 Page d’accueil -->
+    <!-- 🏠 Page d’accueil – Optimisée pour la recherche vocale -->
     <url>
         <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/</loc>
         <lastmod>2025-02-17</lastmod>
@@ -20,9 +20,12 @@
             <image:title>Consultation de voyance fiable par téléphone</image:title>
         </image:image>
         <voice:voice-search-optimized>true</voice:voice-search-optimized>
+        <voice:query-example>Qu’est-ce que la voyance par téléphone ?</voice:query-example>
+        <voice:query-example>Comment fonctionne la voyance pas chère ?</voice:query-example>
+        <ai:ai-friendly-content>true</ai:ai-friendly-content>
     </url>
 
-    <!-- 📞 Page Consultations -->
+    <!-- 📞 Page Consultations – Contenu IA-friendly -->
     <url>
         <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/consultations</loc>
         <lastmod>2025-02-14</lastmod>
@@ -30,18 +33,22 @@
         <priority>0.9</priority>
         <mobile:mobile/>
         <ai:ai-friendly-content>true</ai:ai-friendly-content>
+        <voice:voice-search-optimized>true</voice:voice-search-optimized>
+        <voice:query-example>Comment réserver une consultation de voyance ?</voice:query-example>
     </url>
 
-    <!-- 💰 Page Tarifs -->
+    <!-- 💰 Page Tarifs – Ajout de recherche vocale -->
     <url>
         <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/tarifs</loc>
         <lastmod>2025-02-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <mobile:mobile/>
+        <voice:voice-search-optimized>true</voice:voice-search-optimized>
+        <voice:query-example>Quels sont les tarifs de la voyance par téléphone ?</voice:query-example>
     </url>
 
-    <!-- ❓ FAQ Section - Optimisée pour la recherche vocale -->
+    <!-- ❓ FAQ Section – Optimisée pour la recherche vocale -->
     <url>
         <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/faq</loc>
         <lastmod>2025-01-25</lastmod>
@@ -50,9 +57,11 @@
         <mobile:mobile/>
         <voice:voice-search-optimized>true</voice:voice-search-optimized>
         <voice:query-example>Combien coûte une voyance par téléphone ?</voice:query-example>
+        <voice:query-example>La voyance par téléphone est-elle fiable ?</voice:query-example>
+        <ai:ai-friendly-content>true</ai:ai-friendly-content>
     </url>
 
-    <!-- 📹 Vidéo Promotionnelle -->
+    <!-- 📹 Vidéo Promotionnelle – Ajout de compatibilité familiale -->
     <url>
         <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/videos/promo/</loc>
         <lastmod>2025-02-10</lastmod>
@@ -64,8 +73,11 @@
             <video:thumbnail_loc>https://clairvoyancemedium.github.io/Images/video-thumbnail.jpg</video:thumbnail_loc>
             <video:title>Consultation Voyance Téléphone</video:title>
             <video:description>Découvrez les secrets de la voyance par téléphone avec notre expert.</video:description>
+            <video:family_friendly>yes</video:family_friendly>
         </video:video>
         <ai:ai-friendly-content>true</ai:ai-friendly-content>
+        <voice:voice-search-optimized>true</voice:voice-search-optimized>
+        <voice:query-example>Quelle est la vidéo promo de voyance par téléphone ?</voice:query-example>
     </url>
 
     <!-- 📱 Version Mobile Optimisée -->
@@ -75,6 +87,8 @@
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
         <mobile:mobile/>
+        <voice:voice-search-optimized>true</voice:voice-search-optimized>
+        <voice:query-example>Où trouver la version mobile de voyance par téléphone ?</voice:query-example>
     </url>
 
     <!-- 🤖 Page dédiée au contenu IA -->
@@ -85,6 +99,8 @@
         <priority>0.9</priority>
         <mobile:mobile/>
         <ai:ai-friendly-content>true</ai:ai-friendly-content>
+        <voice:voice-search-optimized>true</voice:voice-search-optimized>
+        <voice:query-example>Qu’est-ce que l’IA peut faire pour la voyance ?</voice:query-example>
     </url>
 
 </urlset>
