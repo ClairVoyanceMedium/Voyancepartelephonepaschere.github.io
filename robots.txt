@@ -1,54 +1,71 @@
-# Robots.txt pour https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/
+# robots.txt – Optimisé pour le marché francophone (2025-02-24)
+#
+# Ce fichier a été conçu pour :
+#   • Maximiser l'indexation par les moteurs de recherche globaux et francophones,
+#   • Optimiser l'indexation sur dispositifs mobiles,
+#   • Faciliter l'indexation des ressources multimédias (images, vidéos, assets),
+#   • Gérer efficacement les pages dynamiques en évitant l'indexation des URLs avec paramètres de tracking,
+#   • Offrir une performance SEO supérieure pour surpasser la concurrence.
+#
+# Adresse du site :
+# https://clairvoyancemedium.github.io/Recuperar-seu-amor-perdido-rapidamente-e-mante-lo.github.io/
+#
+# Sitemap – indispensable pour guider les crawlers :
+Sitemap: https://clairvoyancemedium.github.io/Recuperar-seu-amor-perdido-rapidamente-e-mante-lo.github.io/sitemap.xml
 
-# Indique que toutes les pages importantes doivent être explorées
+# DIRECTIVES GÉNÉRALES pour TOUS les bots :
 User-agent: *
 Allow: /
-
-# Bloque les répertoires inutiles (à personnaliser selon votre site)
-Disallow: /tmp/
-Disallow: /private/
-Disallow: /test/
-Disallow: /drafts/
-
-# Empêche l'indexation des paramètres d'URL pour éviter le contenu dupliqué
-Disallow: /*?*
-
-# Empêche l'indexation des fichiers non pertinents pour le SEO
-Disallow: /404.html
-Disallow: /scripts/
-Disallow: /assets/
-
-# Précise l'emplacement du sitemap XML pour Google et les IA
-Sitemap: https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/sitemap.xml
-
-# Données spécifiques pour Google
-User-agent: Googlebot
-Allow: /sitemap.xml
-Allow: /assets/
-Crawl-delay: 2  # Facultatif, ralentit les crawlers si le site est lent
-
-# Blocage des crawlers indésirables
-User-agent: AhrefsBot
-Disallow: /
-User-agent: SEMrushBot
-Disallow: /
-User-agent: MJ12bot
-Disallow: /
-User-agent: DotBot
-Disallow: /
-
-# Autorisation pour les bots d'images Google
-User-agent: Googlebot-Image
+# Bloquer tous les paramètres de tracking pour éviter le contenu dupliqué
+Disallow: /*?utm_*
+# Autoriser l'accès aux ressources multimédias et aux assets pour une indexation optimale
 Allow: /images/
+Allow: /videos/
+Allow: /media/
+Allow: /assets/
+# Directive Clean-param pour supprimer les paramètres de suivi (prise en charge par certains crawlers comme Yandex)
+Clean-param: utm_source&utm_medium&utm_campaign
 
-# Optimisation pour les bots des réseaux sociaux
-User-agent: Twitterbot
-Allow: /
-User-agent: FacebookExternalHit
+# DIRECTIVES SPÉCIFIQUES pour les moteurs de recherche prioritaires (aucun crawl-delay pour une indexation ultra-rapide) :
+User-agent: Googlebot
 Allow: /
 
-# Indication supplémentaire pour IA
-User-agent: GPTBot
+User-agent: Googlebot-Mobile
 Allow: /
-User-agent: ChatGPT-User
+
+User-agent: Googlebot-Image
 Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# DIRECTIVES pour les bots régionaux et spécialisés (IA, voix, etc.) – crawl-delay de 10s pour limiter la charge serveur
+User-agent: Yandex
+Crawl-delay: 10
+Allow: /
+
+User-agent: BaiduSpider
+Crawl-delay: 10
+Allow: /
+
+User-agent: AI-Bot
+Crawl-delay: 10
+Allow: /
+
+User-agent: VoiceBot
+Crawl-delay: 10
+Allow: /
+
+# DIRECTIVES pour futurs moteurs de recherche francophones (à activer en cas d'émergence) :
+# User-agent: QwantBot
+# Allow: /
+#
+# User-agent: SeznamBot
+# Allow: /
+#
+# Note : Ces directives seront activées si des bots spécifiques au marché francophone émergent.
+
+# FIN DU FICHIER
