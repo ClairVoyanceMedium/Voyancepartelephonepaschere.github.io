@@ -1,36 +1,20 @@
-# robots.txt – Optimisé pour le marché francophone et les assistants vocaux (2025-02-24)
-#
-# Ce fichier a été conçu pour :
-#   • Maximiser l'indexation par les moteurs de recherche globaux et francophones,
-#   • Optimiser l'indexation sur dispositifs mobiles,
-#   • Faciliter l'indexation des ressources multimédias (images, vidéos, assets),
-#   • Gérer efficacement les pages dynamiques en évitant l'indexation des URLs avec paramètres de tracking,
-#   • Offrir une performance SEO supérieure pour surpasser la concurrence,
-#   • Préparer le site pour les évolutions futures (IA, assistants vocaux, etc.),
-#   • Optimiser l'accessibilité pour les assistants vocaux (Google Assistant, Alexa, Siri, etc.).
-#
-# Adresse du site :
-# https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/
-#
-# Sitemap – indispensable pour guider les crawlers :
-Sitemap: https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/sitemap.xml
+# robots.txt – Domaine personnalisé voyance-par-telephone-serieuse.fr
+# Site principal : https://www.voyance-par-telephone-serieuse.fr/
+# Sitemap : https://www.voyance-par-telephone-serieuse.fr/sitemap.xml
 
-# DIRECTIVES GÉNÉRALES pour TOUS les bots (crawl-delay par défaut pour limiter la charge) :
+Sitemap: https://www.voyance-par-telephone-serieuse.fr/sitemap.xml
+
 User-agent: *
-Crawl-delay: 10
 Allow: /
-# Bloquer uniquement les paramètres de tracking pour éviter le contenu dupliqué
 Disallow: /*?utm_*
-# Autoriser l'accès aux ressources multimédias et aux assets pour une indexation optimale
+
 Allow: /images/
 Allow: /videos/
 Allow: /media/
 Allow: /assets/
-# Directive Clean-param pour supprimer les paramètres de suivi (prise en charge par certains crawlers comme Yandex)
-Clean-param: utm_source&utm_medium&utm_campaign
-# Note : Aucun répertoire sensible (/cgi-bin/, /tmp/, etc.) n’existe sur ce site hébergé sur GitHub Pages
 
-# DIRECTIVES SPÉCIFIQUES pour les moteurs de recherche prioritaires (aucun crawl-delay pour une indexation ultra-rapide) :
+Clean-param: utm_source&utm_medium&utm_campaign
+
 User-agent: Googlebot
 Allow: /
 
@@ -46,11 +30,9 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-# DIRECTIVES pour les moteurs francophones actifs (sans delay pour maximiser la visibilité) :
 User-agent: QwantBot
 Allow: /
 
-# DIRECTIVES pour les bots régionaux et spécialisés (crawl-delay de 10s pour limiter la charge serveur) :
 User-agent: Yandex
 Crawl-delay: 10
 Allow: /
@@ -67,7 +49,6 @@ User-agent: VoiceBot
 Crawl-delay: 10
 Allow: /
 
-# DIRECTIVES pour les assistants vocaux et bots d’IA spécifiques (crawl-delay réduit pour une accessibilité optimale) :
 User-agent: Google-Assistant
 Crawl-delay: 5
 Allow: /
@@ -79,16 +60,5 @@ Allow: /
 User-agent: Siri
 Crawl-delay: 5
 Allow: /
-
-# DIRECTIVES pour d’éventuels bots d’IA futurs (exemples à activer si nécessaire) :
-# User-agent: xAI-Bot
-# Crawl-delay: 5
-# Allow: /
-#
-# User-agent: ChatGPT-Crawler
-# Crawl-delay: 5
-# Allow: /
-#
-# Note : Ces bots d’IA seront activés si des crawlers spécifiques émergent.
 
 # FIN DU FICHIER
