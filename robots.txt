@@ -1,5 +1,5 @@
-# robots.txt – Domaine personnalisé voyance-par-telephone-serieuse.fr
-# Site principal : https://www.voyance-par-telephone-serieuse.fr/
+# robots.txt - SEO, IA et assistants vocaux
+# Domaine principal : https://www.voyance-par-telephone-serieuse.fr/
 # Sitemap : https://www.voyance-par-telephone-serieuse.fr/sitemap.xml
 
 Sitemap: https://www.voyance-par-telephone-serieuse.fr/sitemap.xml
@@ -7,13 +7,15 @@ Sitemap: https://www.voyance-par-telephone-serieuse.fr/sitemap.xml
 User-agent: *
 Allow: /
 Disallow: /*?utm_*
-
+Disallow: /*?fbclid=*
+Disallow: /*?gclid=*
+Disallow: /*?msclkid=*
 Allow: /images/
 Allow: /videos/
 Allow: /media/
 Allow: /assets/
 
-Clean-param: utm_source&utm_medium&utm_campaign
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&fbclid&gclid&msclkid
 
 User-agent: Googlebot
 Allow: /
@@ -27,7 +29,22 @@ Allow: /
 User-agent: Googlebot-Video
 Allow: /
 
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
 User-agent: Bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
 Allow: /
 
 User-agent: QwantBot
@@ -37,28 +54,48 @@ User-agent: Yandex
 Crawl-delay: 10
 Allow: /
 
-User-agent: BaiduSpider
+User-agent: Baiduspider
 Crawl-delay: 10
 Allow: /
 
-User-agent: AI-Bot
-Crawl-delay: 10
+User-agent: GPTBot
 Allow: /
 
-User-agent: VoiceBot
-Crawl-delay: 10
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: YouBot
 Allow: /
 
 User-agent: Google-Assistant
-Crawl-delay: 5
-Allow: /
-
-User-agent: Alexa
-Crawl-delay: 5
 Allow: /
 
 User-agent: Siri
-Crawl-delay: 5
 Allow: /
 
-# FIN DU FICHIER
+User-agent: Alexa
+Allow: /
