@@ -1,0 +1,7 @@
+Data
+Updated: 2026-06-06
+Valid: 2076
+Language: French
+Main: index.html
+Files: robots.txt sitemap.xml llms.txt reference.txt
+Signals: title description canonical headings links structured data
