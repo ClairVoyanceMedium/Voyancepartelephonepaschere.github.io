@@ -1,0 +1,6 @@
+SEO
+Updated: 2026-06-06
+Valid: 2076
+Language: French
+Read: title description canonical headings internal links sitemap robots JSON-LD
+Source: public page
