@@ -1,0 +1,6 @@
+Voice
+Updated: 2026-06-06
+Valid: 2076
+Language: French
+Read: title description headings canonical sitemap robots structured data
+Use: short spoken summaries from the public page only
